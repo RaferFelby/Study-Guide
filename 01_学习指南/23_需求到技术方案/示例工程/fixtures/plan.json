@@ -1,0 +1,47 @@
+{
+  "scenario_origin": "simulated",
+  "scenario": "虚构内部客服知识助手，仅为员工查公开政策并引用，不自动处理退款",
+  "users": ["内部客服", "政策维护者", "技术维护者"],
+  "assumptions": [
+    {"id": "A01", "claim": "每月1000次政策查询", "status": "unverified", "validation": "模拟计划：访谈并抽样任务日志"},
+    {"id": "A02", "claim": "人工基线90秒，辅助后含复核45秒", "status": "unverified", "validation": "模拟计划：同任务人工对照计时"},
+    {"id": "A03", "claim": "70%在MVP范围，成功90%", "status": "unverified", "validation": "模拟计划：审核50条多样业务任务"}
+  ],
+  "constraints": {"person_hours": 30, "max_hours_per_day": 4, "monthly_cost_budget_units": 100, "estimated_monthly_cost_units": 20, "memory_gb": 8, "gpu_count": 0, "data": "合成政策/脱敏经授权数据，原型禁止真实账户与秘密", "latency": "开发机固定任务P95目标1000ms，尚未测", "security": "只读、来源引用、权限过滤、缺证据拒答"},
+  "technical_problems": [
+    {"id": "P01", "name": "资料导入", "options": [{"id": "files", "tradeoff": "少依赖易审查，更新需受控流程"}, {"id": "api", "tradeoff": "更新自动化，但增加凭证/分页/重试"}], "selected": "files", "reason": "MVP合成固定资料，先验证来源/更新契约"},
+    {"id": "P02", "name": "检索", "options": [{"id": "keyword", "tradeoff": "可解释成本低，同义表达覆盖有限"}, {"id": "dense", "tradeoff": "语义召回潜力，需模型/索引/质量验证"}], "selected": "keyword", "reason": "先有基线和多样评估，再决定神经后端"},
+    {"id": "P03", "name": "回答", "options": [{"id": "template", "tradeoff": "事实可控，表达灵活性有限"}, {"id": "llm", "tradeoff": "表达灵活，需费用/提示词/事实评估"}], "selected": "template", "reason": "先证明能找准政策和引用，不需生成长文"},
+    {"id": "P04", "name": "访问权限", "options": [{"id": "filtered_rows", "tradeoff": "单库维护容易，必须统一服务端过滤"}, {"id": "separate_collections", "tradeoff": "物理范围清晰，重复索引和维护成本"}], "selected": "filtered_rows", "reason": "MVP少量角色，在执行/检索前统一过滤并加越权测试"},
+    {"id": "P05", "name": "调用能力", "options": [{"id": "readonly", "tradeoff": "副作用少，不能自动处理工单"}, {"id": "confirmed_write", "tradeoff": "可办事，需确认/幂等/恢复和更强验收"}], "selected": "readonly", "reason": "用户目标是查政策，不含代办退款"},
+    {"id": "P06", "name": "服务方式", "options": [{"id": "sync", "tradeoff": "接口简单，适合短查询但连接占用"}, {"id": "jobs", "tradeoff": "长任务可追踪，增加持久状态/队列"}], "selected": "sync", "reason": "模板查询先测时延，确需长任务再扩展"},
+    {"id": "P07", "name": "存储", "options": [{"id": "sqlite", "tradeoff": "单机易起步，写并发/多实例能力有限"}, {"id": "postgres", "tradeoff": "服务型权限/并发强，需部署运维"}], "selected": "sqlite", "reason": "一个原型实例先验证，不宣称生产多实例"},
+    {"id": "P08", "name": "观测", "options": [{"id": "jsonl", "tradeoff": "离线可查，缺实时汇总/分布式传播"}, {"id": "sdk_platform", "tradeoff": "自动关联/仪表盘，增加依赖和维护"}], "selected": "jsonl", "reason": "先定义字段/分母/隐私，再决定接平台"}
+  ],
+  "mvp_in_scope": ["公开政策固定来源/版本", "员工只读查询与来源引用", "无证据明确拒答", "固定评估/越权边界/日志报告", "单实例本机接口"],
+  "mvp_out_of_scope": ["真实退款/账户写入", "任意代码或公网部署", "GPU模型微调", "多实例分布式任务", "替代人工承担业务承诺"],
+  "metrics": [
+    {"business_goal": "少翻资料且不误答", "technical_metric": "带来源事实准确率", "measurement": "审核50条多样任务，结构检查+人工复核", "acceptance": "目标至少90%，未执行"},
+    {"business_goal": "减少客服处理时间", "technical_metric": "人工含复核总时长与服务P95", "measurement": "同一批任务人工/辅助对照计时并记录环境", "acceptance": "含复核中位数至少降低30%，服务P95≤1000ms，未测"},
+    {"business_goal": "保护用户数据", "technical_metric": "定义越权集的实际读取/副作用", "measurement": "正常/跨用户/伪批准/注入边界测试", "acceptance": "所定义集零越权，未测不等于零风险"},
+    {"business_goal": "可维护和可预算", "technical_metric": "有效任务成本/失败调用/日志留存", "measurement": "按版本/窗口实际账本与错误归类", "acceptance": "模拟月预算100单位内，真实费用需另核"}
+  ],
+  "risks": [
+    {"name": "数据无使用许可或有秘密", "mitigation": "只用合成/经授权脱敏", "stop_condition": "发现未授权数据立即停接入并核实"},
+    {"name": "政策无来源/冲突", "mitigation": "保留版本/引用/人工核实", "stop_condition": "来源不明不回答；关键事实错误暂停扩范围"},
+    {"name": "越权或外部副作用", "mitigation": "只读与模型外授权", "stop_condition": "任何越权读取/写入立即停止试点"},
+    {"name": "预算或人时不足", "mitigation": "单实例/模板/范围收缩", "stop_condition": "超30人时或100模拟单位先重新定范围"}
+  ],
+  "milestones": [
+    {"id": "D01", "hours": 2, "depends_on": [], "deliverable": "需求/假设/范围", "acceptance": "用户目标与未证假设分别写明"},
+    {"id": "D02", "hours": 3, "depends_on": ["D01"], "deliverable": "资料与评估草案", "acceptance": "来源/版本/权限/标注状态可查"},
+    {"id": "D03", "hours": 3, "depends_on": ["D02"], "deliverable": "导入原型", "acceptance": "重复更新不丢来源，非法文件明确拒"},
+    {"id": "D04", "hours": 3, "depends_on": ["D03"], "deliverable": "检索基线", "acceptance": "正常/未知/同义评估报告"},
+    {"id": "D05", "hours": 3, "depends_on": ["D04"], "deliverable": "权限边界", "acceptance": "合法读与越权拒，实际读数检查"},
+    {"id": "D06", "hours": 3, "depends_on": ["D05"], "deliverable": "模板回答/引用", "acceptance": "来源匹配，无证据拒答"},
+    {"id": "D07", "hours": 3, "depends_on": ["D06"], "deliverable": "本机同步接口", "acceptance": "输入/错误/请求ID/生命周期验证"},
+    {"id": "D08", "hours": 3, "depends_on": ["D07"], "deliverable": "指标/成本/日志", "acceptance": "分母/隐私/费率范围明确"},
+    {"id": "D09", "hours": 4, "depends_on": ["D08"], "deliverable": "集成与失败回归", "acceptance": "固定集/边界/故障报告，未通过不隐藏"},
+    {"id": "D10", "hours": 3, "depends_on": ["D09"], "deliverable": "演示/交接/决策", "acceptance": "原型范围、证据、风险和继续/停止条件"}
+  ]
+}

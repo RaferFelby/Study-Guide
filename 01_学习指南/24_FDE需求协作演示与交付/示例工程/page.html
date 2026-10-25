@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>模拟政策查询</title><style>body{max-width:700px;margin:40px auto;padding:20px;font:18px sans-serif;line-height:1.6}label{display:block;margin-top:20px}input,select,button{font:inherit;padding:10px;max-width:100%}input{width:90%}button{margin-top:20px}#answer{white-space:pre-wrap}aside{background:#f2f4f6;padding:14px}</style>
+<h1>模拟政策查询</h1><aside>教学演练：合成资料与模拟身份，需人工核查。引用地址是不可访问的示例域名。</aside>
+<form id="query-form"><label for="role">演示身份</label><select id="role"><option value="demo-reader">客服员工</option><option value="demo-guest">无查询权限的访客</option></select><label for="question">想查什么政策？</label><input id="question" maxlength="500" value="退款期限是多少？" required><button id="submit" type="submit">查询政策</button></form>
+<p id="status" role="status" aria-live="polite">等待查询</p><p id="answer"></p><ul id="citations"></ul>
+<script>
+const form=document.querySelector('#query-form');const button=document.querySelector('#submit');
+const status=document.querySelector('#status');const answer=document.querySelector('#answer');const citations=document.querySelector('#citations');
+form.addEventListener('submit',async event=>{event.preventDefault();button.disabled=true;status.textContent='正在读取政策…';answer.textContent='';citations.replaceChildren();
+try{const response=await fetch('/api/query',{method:'POST',headers:{'Content-Type':'application/json','Authorization':document.querySelector('#role').value},body:JSON.stringify({question:document.querySelector('#question').value})});const result=await response.json();
+const labels={answered:'找到政策，请人工复核',refused:'资料不足',denied:'没有查询权限',unavailable:'政策服务暂不可用',invalid:'问题需要修改'};
+status.textContent=labels[result.status]??'请求未完成，请检查输入';answer.textContent=result.answer??'输入或接口格式不符合要求';
+for(const citation of result.citations??[]){const item=document.createElement('li');item.textContent=`${citation.title} · ${citation.version} · ${citation.url}`;citations.append(item);}
+}catch(error){status.textContent='连接失败，请检查本地服务';answer.textContent='请按人工流程核查，不将连接错误当成政策答案。';}finally{button.disabled=false;}});
+</script></html>

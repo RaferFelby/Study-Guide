@@ -1,0 +1,16 @@
+[
+  {
+    "id": "refund",
+    "title": "模拟退款政策",
+    "text": "普通订单退款期限为20天，请核对新版本适用日期。",
+    "version": "v2",
+    "url": "https://policy.example.invalid/refund/v2"
+  },
+  {
+    "id": "invoice",
+    "title": "模拟发票政策",
+    "text": "示例发票申请期限为60天。",
+    "version": "v1",
+    "url": "https://policy.example.invalid/invoice/v1"
+  }
+]

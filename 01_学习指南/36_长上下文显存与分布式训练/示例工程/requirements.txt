@@ -1,0 +1,2 @@
+# 使用根共享环境已安装的PyTorch，不安装FlashAttention独立包或DeepSpeed。
+torch==2.14.0

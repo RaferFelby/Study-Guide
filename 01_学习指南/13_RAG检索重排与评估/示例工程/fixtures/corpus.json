@@ -1,0 +1,194 @@
+[
+  {
+    "document_id": "compute-cancellation",
+    "service": "compute",
+    "field": "cancellation",
+    "text": "Service: compute. Cancellation: 24 hours. Policy version: 1.",
+    "locator": "policies/compute.md#cancellation",
+    "permission": "public"
+  },
+  {
+    "document_id": "compute-retention",
+    "service": "compute",
+    "field": "retention",
+    "text": "Service: compute. Retention: 14 days. Policy version: 1.",
+    "locator": "policies/compute.md#retention",
+    "permission": "public"
+  },
+  {
+    "document_id": "compute-capacity",
+    "service": "compute",
+    "field": "capacity",
+    "text": "Service: compute. Capacity: 64 GB. Policy version: 1.",
+    "locator": "policies/compute.md#capacity",
+    "permission": "public"
+  },
+  {
+    "document_id": "compute-contact",
+    "service": "compute",
+    "field": "contact",
+    "text": "Service: compute. Contact: compute@example.invalid. Policy version: 1.",
+    "locator": "policies/compute.md#contact",
+    "permission": "public"
+  },
+  {
+    "document_id": "storage-cancellation",
+    "service": "storage",
+    "field": "cancellation",
+    "text": "Service: storage. Cancellation: 48 hours. Policy version: 1.",
+    "locator": "policies/storage.md#cancellation",
+    "permission": "public"
+  },
+  {
+    "document_id": "storage-retention",
+    "service": "storage",
+    "field": "retention",
+    "text": "Service: storage. Retention: 30 days. Policy version: 1.",
+    "locator": "policies/storage.md#retention",
+    "permission": "public"
+  },
+  {
+    "document_id": "storage-capacity",
+    "service": "storage",
+    "field": "capacity",
+    "text": "Service: storage. Capacity: 2 TB. Policy version: 1.",
+    "locator": "policies/storage.md#capacity",
+    "permission": "public"
+  },
+  {
+    "document_id": "storage-contact",
+    "service": "storage",
+    "field": "contact",
+    "text": "Service: storage. Contact: storage@example.invalid. Policy version: 1.",
+    "locator": "policies/storage.md#contact",
+    "permission": "public"
+  },
+  {
+    "document_id": "network-cancellation",
+    "service": "network",
+    "field": "cancellation",
+    "text": "Service: network. Cancellation: 12 hours. Policy version: 1.",
+    "locator": "policies/network.md#cancellation",
+    "permission": "public"
+  },
+  {
+    "document_id": "network-retention",
+    "service": "network",
+    "field": "retention",
+    "text": "Service: network. Retention: 7 days. Policy version: 1.",
+    "locator": "policies/network.md#retention",
+    "permission": "public"
+  },
+  {
+    "document_id": "network-capacity",
+    "service": "network",
+    "field": "capacity",
+    "text": "Service: network. Capacity: 10 Gbps. Policy version: 1.",
+    "locator": "policies/network.md#capacity",
+    "permission": "public"
+  },
+  {
+    "document_id": "network-contact",
+    "service": "network",
+    "field": "contact",
+    "text": "Service: network. Contact: network@example.invalid. Policy version: 1.",
+    "locator": "policies/network.md#contact",
+    "permission": "public"
+  },
+  {
+    "document_id": "database-cancellation",
+    "service": "database",
+    "field": "cancellation",
+    "text": "Service: database. Cancellation: 72 hours. Policy version: 1.",
+    "locator": "policies/database.md#cancellation",
+    "permission": "staff"
+  },
+  {
+    "document_id": "database-retention",
+    "service": "database",
+    "field": "retention",
+    "text": "Service: database. Retention: 21 days. Policy version: 1.",
+    "locator": "policies/database.md#retention",
+    "permission": "staff"
+  },
+  {
+    "document_id": "database-capacity",
+    "service": "database",
+    "field": "capacity",
+    "text": "Service: database. Capacity: 500 connections. Policy version: 1.",
+    "locator": "policies/database.md#capacity",
+    "permission": "staff"
+  },
+  {
+    "document_id": "database-contact",
+    "service": "database",
+    "field": "contact",
+    "text": "Service: database. Contact: db@example.invalid. Policy version: 1.",
+    "locator": "policies/database.md#contact",
+    "permission": "staff"
+  },
+  {
+    "document_id": "training-cancellation",
+    "service": "training",
+    "field": "cancellation",
+    "text": "Service: training. Cancellation: 6 hours. Policy version: 1.",
+    "locator": "policies/training.md#cancellation",
+    "permission": "staff"
+  },
+  {
+    "document_id": "training-retention",
+    "service": "training",
+    "field": "retention",
+    "text": "Service: training. Retention: 3 days. Policy version: 1.",
+    "locator": "policies/training.md#retention",
+    "permission": "staff"
+  },
+  {
+    "document_id": "training-capacity",
+    "service": "training",
+    "field": "capacity",
+    "text": "Service: training. Capacity: 4 GPUs. Policy version: 1.",
+    "locator": "policies/training.md#capacity",
+    "permission": "staff"
+  },
+  {
+    "document_id": "training-contact",
+    "service": "training",
+    "field": "contact",
+    "text": "Service: training. Contact: train@example.invalid. Policy version: 1.",
+    "locator": "policies/training.md#contact",
+    "permission": "staff"
+  },
+  {
+    "document_id": "analytics-cancellation",
+    "service": "analytics",
+    "field": "cancellation",
+    "text": "Service: analytics. Cancellation: 36 hours. Policy version: 1.",
+    "locator": "policies/analytics.md#cancellation",
+    "permission": "public"
+  },
+  {
+    "document_id": "analytics-retention",
+    "service": "analytics",
+    "field": "retention",
+    "text": "Service: analytics. Retention: 10 days. Policy version: 1.",
+    "locator": "policies/analytics.md#retention",
+    "permission": "public"
+  },
+  {
+    "document_id": "analytics-capacity",
+    "service": "analytics",
+    "field": "capacity",
+    "text": "Service: analytics. Capacity: 8 workers. Policy version: 1.",
+    "locator": "policies/analytics.md#capacity",
+    "permission": "public"
+  },
+  {
+    "document_id": "analytics-contact",
+    "service": "analytics",
+    "field": "contact",
+    "text": "Service: analytics. Contact: data@example.invalid. Policy version: 1.",
+    "locator": "policies/analytics.md#contact",
+    "permission": "public"
+  }
+]

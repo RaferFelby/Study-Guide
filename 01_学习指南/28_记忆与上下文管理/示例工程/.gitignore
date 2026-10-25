@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+*.sqlite3
+memory-demo-*/
+author-tests-*/
+report-*.json

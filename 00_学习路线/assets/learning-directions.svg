@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="1050" viewBox="0 0 1260 1050" role="img">
+<title>后续学习：选择一个当前目标</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#647A91"/></marker></defs>
+<rect width="1260" height="1050" fill="#F8FAFD"/>
+<text x="630.0" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="43" fill="#24344B">后续学习：选择一个当前目标</text>
+<text x="630.0" y="118" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="25" fill="#53657C">五条方向共享部分课程；先按当前阶段完成一个小目标</text>
+<rect x="35.0" y="452.5" width="240" height="145" rx="18" fill="#EDF3FF" stroke="#A9BEE5" stroke-width="3"/>
+<text x="155" y="502" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="32" fill="#24344B">首次主线完成后</text>
+<text x="155" y="551" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#53657C">选择当前方向</text>
+<rect x="985.0" y="452.5" width="250" height="145" rx="18" fill="#E8F5EF" stroke="#9AC8B2" stroke-width="3"/>
+<text x="1110" y="502" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="32" fill="#24344B">保存结果与问题</text>
+<text x="1110" y="551" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#53657C">复盘后按需继续</text>
+<polyline points="275,525 330,525 330,225 405,225" fill="none" stroke="#647A91" stroke-width="4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="905,225 950,225 950,525 985,525" fill="none" stroke="#647A91" stroke-width="4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="405.0" y="167.5" width="500" height="115" rx="18" fill="#FFFFFF" stroke="#C8D5E6" stroke-width="3"/>
+<text x="655" y="202" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="32" fill="#24344B">A · Agent 与 RAG</text>
+<text x="655" y="251" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#53657C">检索、工具、审计、上下文与整合</text>
+<polyline points="275,525 330,525 330,375 405,375" fill="none" stroke="#647A91" stroke-width="4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="905,375 950,375 950,525 985,525" fill="none" stroke="#647A91" stroke-width="4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="405.0" y="317.5" width="500" height="115" rx="18" fill="#FFFFFF" stroke="#C8D5E6" stroke-width="3"/>
+<text x="655" y="352" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="32" fill="#24344B">B · 模型训练与算法</text>
+<text x="655" y="401" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#53657C">数学、训练、模型、微调与分支</text>
+<polyline points="275,525 330,525 330,525 405,525" fill="none" stroke="#647A91" stroke-width="4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="905,525 950,525 950,525 985,525" fill="none" stroke="#647A91" stroke-width="4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="405.0" y="467.5" width="500" height="115" rx="18" fill="#FFFFFF" stroke="#C8D5E6" stroke-width="3"/>
+<text x="655" y="502" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="32" fill="#24344B">C · 机器学习与数据分析</text>
+<text x="655" y="551" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#53657C">数组、表格实验、复现与数据</text>
+<polyline points="275,525 330,525 330,675 405,675" fill="none" stroke="#647A91" stroke-width="4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="905,675 950,675 950,525 985,525" fill="none" stroke="#647A91" stroke-width="4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="405.0" y="617.5" width="500" height="115" rx="18" fill="#FFFFFF" stroke="#C8D5E6" stroke-width="3"/>
+<text x="655" y="652" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="32" fill="#24344B">D · 推理系统与 GPU</text>
+<text x="655" y="701" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#53657C">服务先学 HTTP；显存算子先学张量</text>
+<polyline points="275,525 330,525 330,825 405,825" fill="none" stroke="#647A91" stroke-width="4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="905,825 950,825 950,525 985,525" fill="none" stroke="#647A91" stroke-width="4" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="405.0" y="767.5" width="500" height="115" rx="18" fill="#FFFFFF" stroke="#C8D5E6" stroke-width="3"/>
+<text x="655" y="802" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="32" fill="#24344B">E · 需求分析与交付</text>
+<text x="655" y="851" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#53657C">场景、接口、评估排错与交接</text>
+<text x="630" y="955" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="25" fill="#53657C">进入具体课程前，按详细路线补齐数学、状态、工具、事务等前置</text>
+<text x="630" y="1000" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, sans-serif" font-size="25" fill="#53657C">算法分支、CUDA 与原生算子按目标和实际环境进入</text>
+</svg>

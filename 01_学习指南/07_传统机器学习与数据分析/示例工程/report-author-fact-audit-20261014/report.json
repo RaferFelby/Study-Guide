@@ -1,0 +1,141 @@
+{
+  "dataset": "deterministic synthetic customer renewal data",
+  "random_seed": 34,
+  "selected_model_by_dev_pr_auc": "logistic_regression",
+  "selected_model_by_dev_average_precision": "logistic_regression",
+  "metric_definitions": {
+    "average_precision": "scikit-learn average_precision_score；AP，非梯形PR-AUC",
+    "pr_auc": "旧字段兼容别名，数值与 average_precision 相同",
+    "selected_model_by_dev_pr_auc": "旧字段兼容；实际按开发集 AP 选择"
+  },
+  "threshold_selected_on_dev": 0.23,
+  "dev_model_comparison": {
+    "baseline": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.7125,
+      "balanced_accuracy": 0.5,
+      "average_precision": 0.2875,
+      "pr_auc": 0.2875,
+      "roc_auc": 0.5,
+      "confusion_matrix": [
+        [
+          171,
+          0
+        ],
+        [
+          69,
+          0
+        ]
+      ]
+    },
+    "logistic_regression": {
+      "precision": 0.3684210526315789,
+      "recall": 0.10144927536231885,
+      "f1": 0.1590909090909091,
+      "accuracy": 0.6916666666666667,
+      "balanced_accuracy": 0.5156369183829138,
+      "average_precision": 0.38442990220066486,
+      "pr_auc": 0.38442990220066486,
+      "roc_auc": 0.6134418171031444,
+      "confusion_matrix": [
+        [
+          159,
+          12
+        ],
+        [
+          62,
+          7
+        ]
+      ]
+    },
+    "decision_tree": {
+      "precision": 0.2692307692307692,
+      "recall": 0.10144927536231885,
+      "f1": 0.14736842105263157,
+      "accuracy": 0.6625,
+      "balanced_accuracy": 0.49516908212560384,
+      "average_precision": 0.30296688840539476,
+      "pr_auc": 0.30296688840539476,
+      "roc_auc": 0.5109755063988475,
+      "confusion_matrix": [
+        [
+          152,
+          19
+        ],
+        [
+          62,
+          7
+        ]
+      ]
+    },
+    "random_forest": {
+      "precision": 0.3118279569892473,
+      "recall": 0.42028985507246375,
+      "f1": 0.35802469135802467,
+      "accuracy": 0.5666666666666667,
+      "balanced_accuracy": 0.5230104246122553,
+      "average_precision": 0.3444236232930753,
+      "pr_auc": 0.3444236232930753,
+      "roc_auc": 0.5547080261039071,
+      "confusion_matrix": [
+        [
+          107,
+          64
+        ],
+        [
+          40,
+          29
+        ]
+      ]
+    },
+    "gradient_boosting": {
+      "precision": 0.3448275862068966,
+      "recall": 0.2898550724637681,
+      "f1": 0.31496062992125984,
+      "accuracy": 0.6375,
+      "balanced_accuracy": 0.533816425120773,
+      "average_precision": 0.34607419777186266,
+      "pr_auc": 0.34607419777186266,
+      "roc_auc": 0.5766590389016019,
+      "confusion_matrix": [
+        [
+          133,
+          38
+        ],
+        [
+          49,
+          20
+        ]
+      ]
+    }
+  },
+  "test_metrics": {
+    "precision": 0.3691275167785235,
+    "recall": 0.7971014492753623,
+    "f1": 0.5045871559633027,
+    "accuracy": 0.55,
+    "balanced_accuracy": 0.6236969234680905,
+    "average_precision": 0.528162553078777,
+    "pr_auc": 0.528162553078777,
+    "roc_auc": 0.70573777438766,
+    "confusion_matrix": [
+      [
+        77,
+        94
+      ],
+      [
+        14,
+        55
+      ]
+    ]
+  },
+  "test_accuracy": 0.55,
+  "test_balanced_accuracy": 0.6236969234680905,
+  "limitations": [
+    "数据由已知公式合成，不能代表真实客户或业务效果。",
+    "测试集只用于最终评估；不要据此反复调参。",
+    "阈值按开发集 F1 选择，不等于业务最优阈值。"
+  ]
+}

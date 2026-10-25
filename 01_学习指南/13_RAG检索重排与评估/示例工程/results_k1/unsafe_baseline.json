@@ -1,0 +1,584 @@
+{
+  "report": {
+    "strategy": "rerank",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "top_k": 1,
+    "threshold": 0.0,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "ndcg_at_k": 1.0,
+    "answer_accuracy": 0.9666666666666667,
+    "coverage": 0.8333333333333334,
+    "faithfulness_proxy": 1.0,
+    "citation_accuracy": 0.96,
+    "false_rejection_rate": 0.0,
+    "unknown_rejection_rate": 0.8333333333333334,
+    "failures": {
+      "correct_answer": 24,
+      "correct_rejection": 5,
+      "unsupported_answer": 1
+    }
+  },
+  "rows": [
+    {
+      "question_id": "storage-cancellation-1",
+      "query": "What is the storage cancellation window?",
+      "category": "direct",
+      "audience": "staff",
+      "ranked_ids": [
+        "storage-cancellation"
+      ],
+      "gold_ids": [
+        "storage-cancellation"
+      ],
+      "gold_answer": "48 hours",
+      "answer": "48 hours",
+      "citation_id": "storage-cancellation",
+      "locator": "policies/storage.md#cancellation",
+      "confidence": 0.6666666666666666,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "storage-cancellation-2",
+      "query": "How early must I cancel storage?",
+      "category": "paraphrase",
+      "audience": "staff",
+      "ranked_ids": [
+        "storage-cancellation"
+      ],
+      "gold_ids": [
+        "storage-cancellation"
+      ],
+      "gold_answer": "48 hours",
+      "answer": "48 hours",
+      "citation_id": "storage-cancellation",
+      "locator": "policies/storage.md#cancellation",
+      "confidence": 0.3333333333333333,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "storage-retention-1",
+      "query": "What is the storage retention period?",
+      "category": "direct",
+      "audience": "staff",
+      "ranked_ids": [
+        "storage-retention"
+      ],
+      "gold_ids": [
+        "storage-retention"
+      ],
+      "gold_answer": "30 days",
+      "answer": "30 days",
+      "citation_id": "storage-retention",
+      "locator": "policies/storage.md#retention",
+      "confidence": 0.6666666666666666,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "storage-retention-2",
+      "query": "How long does storage keep records?",
+      "category": "paraphrase",
+      "audience": "staff",
+      "ranked_ids": [
+        "storage-retention"
+      ],
+      "gold_ids": [
+        "storage-retention"
+      ],
+      "gold_answer": "30 days",
+      "answer": "30 days",
+      "citation_id": "storage-retention",
+      "locator": "policies/storage.md#retention",
+      "confidence": 0.25,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "storage-capacity-1",
+      "query": "What is the storage capacity limit?",
+      "category": "direct",
+      "audience": "staff",
+      "ranked_ids": [
+        "storage-capacity"
+      ],
+      "gold_ids": [
+        "storage-capacity"
+      ],
+      "gold_answer": "2 TB",
+      "answer": "2 TB",
+      "citation_id": "storage-capacity",
+      "locator": "policies/storage.md#capacity",
+      "confidence": 0.6666666666666666,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "storage-capacity-2",
+      "query": "What quota does storage allow?",
+      "category": "paraphrase",
+      "audience": "staff",
+      "ranked_ids": [
+        "storage-capacity"
+      ],
+      "gold_ids": [
+        "storage-capacity"
+      ],
+      "gold_answer": "2 TB",
+      "answer": "2 TB",
+      "citation_id": "storage-capacity",
+      "locator": "policies/storage.md#capacity",
+      "confidence": 0.3333333333333333,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "storage-contact-1",
+      "query": "What is the storage contact email?",
+      "category": "direct",
+      "audience": "staff",
+      "ranked_ids": [
+        "storage-contact"
+      ],
+      "gold_ids": [
+        "storage-contact"
+      ],
+      "gold_answer": "storage@example.invalid",
+      "answer": "storage@example.invalid",
+      "citation_id": "storage-contact",
+      "locator": "policies/storage.md#contact",
+      "confidence": 0.6666666666666666,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "storage-contact-2",
+      "query": "Who should I email about storage?",
+      "category": "paraphrase",
+      "audience": "staff",
+      "ranked_ids": [
+        "storage-contact"
+      ],
+      "gold_ids": [
+        "storage-contact"
+      ],
+      "gold_answer": "storage@example.invalid",
+      "answer": "storage@example.invalid",
+      "citation_id": "storage-contact",
+      "locator": "policies/storage.md#contact",
+      "confidence": 0.5,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "database-cancellation-1",
+      "query": "What is the database cancellation window?",
+      "category": "direct",
+      "audience": "staff",
+      "ranked_ids": [
+        "database-cancellation"
+      ],
+      "gold_ids": [
+        "database-cancellation"
+      ],
+      "gold_answer": "72 hours",
+      "answer": "72 hours",
+      "citation_id": "database-cancellation",
+      "locator": "policies/database.md#cancellation",
+      "confidence": 0.6666666666666666,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "database-cancellation-2",
+      "query": "How early must I cancel database?",
+      "category": "paraphrase",
+      "audience": "staff",
+      "ranked_ids": [
+        "database-cancellation"
+      ],
+      "gold_ids": [
+        "database-cancellation"
+      ],
+      "gold_answer": "72 hours",
+      "answer": "72 hours",
+      "citation_id": "database-cancellation",
+      "locator": "policies/database.md#cancellation",
+      "confidence": 0.3333333333333333,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "database-retention-1",
+      "query": "What is the database retention period?",
+      "category": "direct",
+      "audience": "staff",
+      "ranked_ids": [
+        "database-retention"
+      ],
+      "gold_ids": [
+        "database-retention"
+      ],
+      "gold_answer": "21 days",
+      "answer": "21 days",
+      "citation_id": "database-retention",
+      "locator": "policies/database.md#retention",
+      "confidence": 0.6666666666666666,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "database-retention-2",
+      "query": "How long does database keep records?",
+      "category": "paraphrase",
+      "audience": "staff",
+      "ranked_ids": [
+        "database-retention"
+      ],
+      "gold_ids": [
+        "database-retention"
+      ],
+      "gold_answer": "21 days",
+      "answer": "21 days",
+      "citation_id": "database-retention",
+      "locator": "policies/database.md#retention",
+      "confidence": 0.25,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "database-capacity-1",
+      "query": "What is the database capacity limit?",
+      "category": "direct",
+      "audience": "staff",
+      "ranked_ids": [
+        "database-capacity"
+      ],
+      "gold_ids": [
+        "database-capacity"
+      ],
+      "gold_answer": "500 connections",
+      "answer": "500 connections",
+      "citation_id": "database-capacity",
+      "locator": "policies/database.md#capacity",
+      "confidence": 0.6666666666666666,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "database-capacity-2",
+      "query": "What quota does database allow?",
+      "category": "paraphrase",
+      "audience": "staff",
+      "ranked_ids": [
+        "database-capacity"
+      ],
+      "gold_ids": [
+        "database-capacity"
+      ],
+      "gold_answer": "500 connections",
+      "answer": "500 connections",
+      "citation_id": "database-capacity",
+      "locator": "policies/database.md#capacity",
+      "confidence": 0.3333333333333333,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "database-contact-1",
+      "query": "What is the database contact email?",
+      "category": "direct",
+      "audience": "staff",
+      "ranked_ids": [
+        "database-contact"
+      ],
+      "gold_ids": [
+        "database-contact"
+      ],
+      "gold_answer": "db@example.invalid",
+      "answer": "db@example.invalid",
+      "citation_id": "database-contact",
+      "locator": "policies/database.md#contact",
+      "confidence": 0.6666666666666666,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "database-contact-2",
+      "query": "Who should I email about database?",
+      "category": "paraphrase",
+      "audience": "staff",
+      "ranked_ids": [
+        "database-contact"
+      ],
+      "gold_ids": [
+        "database-contact"
+      ],
+      "gold_answer": "db@example.invalid",
+      "answer": "db@example.invalid",
+      "citation_id": "database-contact",
+      "locator": "policies/database.md#contact",
+      "confidence": 0.5,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "analytics-cancellation-1",
+      "query": "What is the analytics cancellation window?",
+      "category": "direct",
+      "audience": "staff",
+      "ranked_ids": [
+        "analytics-cancellation"
+      ],
+      "gold_ids": [
+        "analytics-cancellation"
+      ],
+      "gold_answer": "36 hours",
+      "answer": "36 hours",
+      "citation_id": "analytics-cancellation",
+      "locator": "policies/analytics.md#cancellation",
+      "confidence": 0.6666666666666666,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "analytics-cancellation-2",
+      "query": "How early must I cancel analytics?",
+      "category": "paraphrase",
+      "audience": "staff",
+      "ranked_ids": [
+        "analytics-cancellation"
+      ],
+      "gold_ids": [
+        "analytics-cancellation"
+      ],
+      "gold_answer": "36 hours",
+      "answer": "36 hours",
+      "citation_id": "analytics-cancellation",
+      "locator": "policies/analytics.md#cancellation",
+      "confidence": 0.3333333333333333,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "analytics-retention-1",
+      "query": "What is the analytics retention period?",
+      "category": "direct",
+      "audience": "staff",
+      "ranked_ids": [
+        "analytics-retention"
+      ],
+      "gold_ids": [
+        "analytics-retention"
+      ],
+      "gold_answer": "10 days",
+      "answer": "10 days",
+      "citation_id": "analytics-retention",
+      "locator": "policies/analytics.md#retention",
+      "confidence": 0.6666666666666666,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "analytics-retention-2",
+      "query": "How long does analytics keep records?",
+      "category": "paraphrase",
+      "audience": "staff",
+      "ranked_ids": [
+        "analytics-retention"
+      ],
+      "gold_ids": [
+        "analytics-retention"
+      ],
+      "gold_answer": "10 days",
+      "answer": "10 days",
+      "citation_id": "analytics-retention",
+      "locator": "policies/analytics.md#retention",
+      "confidence": 0.25,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "analytics-capacity-1",
+      "query": "What is the analytics capacity limit?",
+      "category": "direct",
+      "audience": "staff",
+      "ranked_ids": [
+        "analytics-capacity"
+      ],
+      "gold_ids": [
+        "analytics-capacity"
+      ],
+      "gold_answer": "8 workers",
+      "answer": "8 workers",
+      "citation_id": "analytics-capacity",
+      "locator": "policies/analytics.md#capacity",
+      "confidence": 0.6666666666666666,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "analytics-capacity-2",
+      "query": "What quota does analytics allow?",
+      "category": "paraphrase",
+      "audience": "staff",
+      "ranked_ids": [
+        "analytics-capacity"
+      ],
+      "gold_ids": [
+        "analytics-capacity"
+      ],
+      "gold_answer": "8 workers",
+      "answer": "8 workers",
+      "citation_id": "analytics-capacity",
+      "locator": "policies/analytics.md#capacity",
+      "confidence": 0.3333333333333333,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "analytics-contact-1",
+      "query": "What is the analytics contact email?",
+      "category": "direct",
+      "audience": "staff",
+      "ranked_ids": [
+        "analytics-contact"
+      ],
+      "gold_ids": [
+        "analytics-contact"
+      ],
+      "gold_answer": "data@example.invalid",
+      "answer": "data@example.invalid",
+      "citation_id": "analytics-contact",
+      "locator": "policies/analytics.md#contact",
+      "confidence": 0.6666666666666666,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "analytics-contact-2",
+      "query": "Who should I email about analytics?",
+      "category": "paraphrase",
+      "audience": "staff",
+      "ranked_ids": [
+        "analytics-contact"
+      ],
+      "gold_ids": [
+        "analytics-contact"
+      ],
+      "gold_answer": "data@example.invalid",
+      "answer": "data@example.invalid",
+      "citation_id": "analytics-contact",
+      "locator": "policies/analytics.md#contact",
+      "confidence": 0.5,
+      "reason": "依据原文抽取",
+      "stage": "correct_answer"
+    },
+    {
+      "question_id": "unknown-07",
+      "query": "What is the storage price?",
+      "category": "missing_fact",
+      "audience": "staff",
+      "ranked_ids": [
+        "storage-contact"
+      ],
+      "gold_ids": [],
+      "gold_answer": null,
+      "answer": null,
+      "citation_id": null,
+      "locator": null,
+      "confidence": 0.0,
+      "reason": "不认识服务或问题字段",
+      "stage": "correct_rejection"
+    },
+    {
+      "question_id": "unknown-08",
+      "query": "What is the storage retention for the premium plan?",
+      "category": "unsupported_qualifier",
+      "audience": "staff",
+      "ranked_ids": [
+        "storage-retention"
+      ],
+      "gold_ids": [],
+      "gold_answer": null,
+      "answer": "30 days",
+      "citation_id": "storage-retention",
+      "locator": "policies/storage.md#retention",
+      "confidence": 0.4,
+      "reason": "依据原文抽取",
+      "stage": "unsupported_answer"
+    },
+    {
+      "question_id": "unknown-09",
+      "query": "What is the database encryption algorithm?",
+      "category": "missing_fact",
+      "audience": "staff",
+      "ranked_ids": [
+        "database-capacity"
+      ],
+      "gold_ids": [],
+      "gold_answer": null,
+      "answer": null,
+      "citation_id": null,
+      "locator": null,
+      "confidence": 0.0,
+      "reason": "不认识服务或问题字段",
+      "stage": "correct_rejection"
+    },
+    {
+      "question_id": "unknown-10",
+      "query": "What is the archive retention period?",
+      "category": "unknown_service",
+      "audience": "staff",
+      "ranked_ids": [
+        "analytics-retention"
+      ],
+      "gold_ids": [],
+      "gold_answer": null,
+      "answer": null,
+      "citation_id": null,
+      "locator": null,
+      "confidence": 0.0,
+      "reason": "不认识服务或问题字段",
+      "stage": "correct_rejection"
+    },
+    {
+      "question_id": "unknown-11",
+      "query": "What is the database contact email?",
+      "category": "permission_denied",
+      "audience": "public",
+      "ranked_ids": [
+        "analytics-contact"
+      ],
+      "gold_ids": [],
+      "gold_answer": null,
+      "answer": null,
+      "citation_id": null,
+      "locator": null,
+      "confidence": 0.0,
+      "reason": "候选没有服务和字段均匹配的证据",
+      "stage": "correct_rejection"
+    },
+    {
+      "question_id": "unknown-12",
+      "query": "What is the database cancellation window?",
+      "category": "permission_denied",
+      "audience": "public",
+      "ranked_ids": [
+        "analytics-cancellation"
+      ],
+      "gold_ids": [],
+      "gold_answer": null,
+      "answer": null,
+      "citation_id": null,
+      "locator": null,
+      "confidence": 0.0,
+      "reason": "候选没有服务和字段均匹配的证据",
+      "stage": "correct_rejection"
+    }
+  ]
+}

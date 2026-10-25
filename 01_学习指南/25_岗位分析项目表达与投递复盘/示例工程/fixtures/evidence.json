@@ -1,0 +1,14 @@
+{
+  "id": "E22",
+  "origin": "synthetic_author_teaching_project",
+  "authorship": "learner_not_verified",
+  "dataset": "8固定合成退款任务，5故意失败与3正常回归",
+  "configuration": "五项机制修复组合，与基线配对",
+  "before_successes": 3,
+  "after_successes": 8,
+  "n": 8,
+  "regressed_ids": [],
+  "artifact": "../../22_Case分析与系统联调/示例工程/experiments.py",
+  "limits": "无真实LLM/网络生产/客户采用；任务契约通过不是业务收益",
+  "status": "author_verified_learner_unverified"
+}

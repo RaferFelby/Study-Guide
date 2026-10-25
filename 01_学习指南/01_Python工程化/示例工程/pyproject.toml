@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77.0.3,<80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "learning-ticketkit"
+version = "0.1.0"
+description = "Executable examples for the Python engineering learning guide"
+requires-python = ">=3.11"
+
+[project.scripts]
+ticketkit-demo = "ticketkit.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src"]

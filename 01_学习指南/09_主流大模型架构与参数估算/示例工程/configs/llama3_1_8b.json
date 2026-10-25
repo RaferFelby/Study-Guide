@@ -1,0 +1,16 @@
+{
+  "_source": "https://github.com/meta-llama/llama-models/blob/main/models/sku_list.py",
+  "_source_note": "Meta 官方模型清单中的 Llama 3.1 8B arch_args 字段教学快照；官方源码默认分支可能更新。",
+  "model_name": "Llama-3.1-8B",
+  "hidden_size": 4096,
+  "num_hidden_layers": 32,
+  "num_attention_heads": 32,
+  "num_key_value_heads": 8,
+  "intermediate_size": 14336,
+  "vocab_size": 128256,
+  "tie_word_embeddings": false,
+  "gated_mlp": true,
+  "attention_bias": false,
+  "mlp_bias": false,
+  "lm_head_bias": false
+}

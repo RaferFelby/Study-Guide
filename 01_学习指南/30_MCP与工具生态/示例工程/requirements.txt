@@ -1,0 +1,1 @@
+# 运行仅使用Python标准库；pytest与Ruff沿用根共享环境。

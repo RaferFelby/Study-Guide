@@ -1,0 +1,1 @@
+# 运行只需Python标准库；作者检查使用共享pytest与Ruff。

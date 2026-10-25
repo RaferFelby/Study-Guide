@@ -1,0 +1,51 @@
+[
+  {
+    "id": "A01",
+    "job_id": "J01",
+    "sent": "2026-10-01",
+    "stage": "screen",
+    "origin": "simulated",
+    "feedback": [
+      "project_explanation"
+    ]
+  },
+  {
+    "id": "A02",
+    "job_id": "J02",
+    "sent": "2026-10-02",
+    "stage": "technical",
+    "origin": "simulated",
+    "feedback": [
+      "project_explanation",
+      "coding"
+    ]
+  },
+  {
+    "id": "A03",
+    "job_id": "J03",
+    "sent": "2026-10-03",
+    "stage": "rejected",
+    "origin": "simulated",
+    "feedback": [
+      "coding"
+    ]
+  },
+  {
+    "id": "A04",
+    "job_id": "J04",
+    "sent": "2026-10-04",
+    "stage": "pending",
+    "origin": "simulated",
+    "feedback": []
+  },
+  {
+    "id": "A05",
+    "job_id": "J05",
+    "sent": "2026-10-05",
+    "stage": "technical",
+    "origin": "simulated",
+    "feedback": [
+      "coding"
+    ]
+  }
+]

@@ -1,0 +1,4 @@
+# 公开归档重放仅使用Python标准库。
+# local_probe复用共享环境已有PyTorch，测试复用pytest/Ruff。
+# 不自动下载模型，不安装lm-evaluation-harness/transformers/datasets。
+torch==2.14.0

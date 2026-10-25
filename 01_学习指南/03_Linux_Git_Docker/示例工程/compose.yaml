@@ -1,0 +1,11 @@
+services:
+  demo:
+    build: .
+    ports:
+      - "8000:8000"
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16m
+    mem_limit: 256m
+    cpus: 1.0
+    restart: "no"

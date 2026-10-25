@@ -1,0 +1,21 @@
+name: quality
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 01_学习指南/02_测试与实验复现/示例工程
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pytest
+      - run: python -m ruff check .
+      - run: python -m ruff format --check .

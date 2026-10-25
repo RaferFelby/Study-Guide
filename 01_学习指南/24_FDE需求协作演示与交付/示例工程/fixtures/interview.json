@@ -1,0 +1,63 @@
+{
+  "origin": "simulated",
+  "participants": [
+    {
+      "role": "客服使用者",
+      "name": "模拟员工甲"
+    },
+    {
+      "role": "政策维护者",
+      "name": "模拟员工乙"
+    },
+    {
+      "role": "验收负责人",
+      "name": "模拟负责人丙"
+    }
+  ],
+  "notes": [
+    {
+      "question": "最近一次查政策如何完成？",
+      "answer": "先翻文档，再找维护者核对版本，最后人工答复。",
+      "status": "simulated_response"
+    },
+    {
+      "question": "何时不能自动给答案？",
+      "answer": "找不到来源、VIP条件缺失、版本冲突时交人工。",
+      "status": "simulated_response"
+    },
+    {
+      "question": "第一轮允许接哪些数据？",
+      "answer": "合成公开政策，不接真实账户，不自动退款。",
+      "status": "simulated_response"
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "Q01",
+      "question": "真实任务量与复核时间？",
+      "owner": "业务负责人",
+      "status": "unverified"
+    },
+    {
+      "id": "Q02",
+      "question": "真实资料授权和更新责任？",
+      "owner": "政策维护者",
+      "status": "unverified"
+    },
+    {
+      "id": "Q03",
+      "question": "真实身份系统如何校验？",
+      "owner": "技术负责人",
+      "status": "unverified"
+    }
+  ],
+  "feedback": [
+    {
+      "origin": "simulated_review",
+      "issue": "模拟评审要求来源版本必须可见",
+      "change": "当前页面采纳此要求，逐项显示标题、版本、占位地址；UAT检查version",
+      "evidence": "page.html和test_normal_has_version_citation_and_unknown_refuses",
+      "not_claimed": "未经历真实客户反馈"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "number": 33,
+  "module": 23,
+  "folder": "33_DPO与偏好优化",
+  "map": "00 DPO与偏好优化学习地图",
+  "topic": "DPO与偏好优化",
+  "next_topic": "规划与工具使用微调",
+  "summary": "成对偏好、completion概率、冻结参考与beta、实际CPU/CUDA小模型SFT→DPO、长度/坏标签/过优化对照。",
+  "mapping": {
+    "K23-01": "03 用冻结参考与beta读懂DPO损失",
+    "K23-02": "06 分清SFTPPO与DPO并写采用结论",
+    "K23-03": "05 比较BaseSFT与DPO并分析长度偏差",
+    "C23-01": "04 从SFT权重启动CPU与GPU的DPO",
+    "C23-02": "05 比较BaseSFT与DPO并分析长度偏差",
+    "C23-03": "05 比较BaseSFT与DPO并分析长度偏差",
+    "C23-04": "06 分清SFTPPO与DPO并写采用结论"
+  }
+}

@@ -1,0 +1,305 @@
+/* AI 学习 Vault：统一阅读版式，仅作用于已标记的教材页面。 */
+.guide-page {
+  --guide-reading-width: 50rem;
+  --guide-line-height: 1.85;
+}
+
+.guide-home { --guide-reading-width: 48rem; }
+.guide-route { --guide-reading-width: 52rem; }
+.guide-map { --guide-reading-width: 56rem; }
+.guide-index { --guide-reading-width: 58rem; }
+.guide-record { --guide-reading-width: 56rem; }
+.guide-code { --guide-reading-width: 56rem; }
+.guide-reference { --guide-reading-width: 56rem; }
+.study-overview { --guide-reading-width: 70rem; }
+
+.guide-page .markdown-preview-sizer,
+.guide-page .cm-sizer {
+  width: 100%;
+  max-width: var(--guide-reading-width);
+  margin-inline: auto;
+}
+
+/* 阅读时把教学放在首屏；编辑视图中的属性仍可修改。 */
+.markdown-preview-view.guide-page:not(.guide-reference) .metadata-container {
+  display: none;
+}
+
+.guide-reference .metadata-container {
+  font-size: 0.9em;
+}
+
+.guide-page .markdown-preview-section {
+  line-height: var(--guide-line-height);
+  overflow-wrap: break-word;
+}
+
+.guide-page h1 {
+  margin-block: 0.25em 0.85em;
+  padding-bottom: 0.45em;
+  border-bottom: 1px solid var(--background-modifier-border);
+  font-size: 1.8em;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.guide-page h2 {
+  margin-block: 1.9em 0.8em;
+  padding-block: 0 0.35em;
+  border-bottom: 1px solid var(--background-modifier-border);
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+
+.guide-page h3 {
+  margin-block: 1.5em 0.6em;
+  font-size: 1.12em;
+  line-height: 1.55;
+}
+
+.guide-page h4 {
+  margin-block: 1.3em 0.5em;
+  font-size: 1em;
+}
+
+.guide-page p { margin-block: 0.7em; }
+.guide-page li { margin-block: 0.3em; }
+.guide-page li > :is(ul, ol) { margin-block: 0.3em; }
+.guide-page :is(ul, ol) { padding-inline-start: 1.65em; }
+
+.guide-page .internal-link,
+.guide-page .external-link {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.guide-page a:focus-visible {
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+.guide-page pre {
+  max-width: 100%;
+  padding: 1em 1.1em;
+  overflow-x: auto;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.guide-page pre code {
+  white-space: pre;
+  word-break: normal;
+  overflow-wrap: normal;
+  font-size: 0.91em;
+}
+
+.guide-page :not(pre) > code {
+  overflow-wrap: anywhere;
+  white-space: break-spaces;
+  font-size: 0.92em;
+}
+
+.guide-page .callout {
+  margin-block: 1em;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.guide-page .callout-title {
+  font-size: 0.97em;
+  font-weight: 650;
+}
+
+.guide-page .callout-content > :first-child { margin-top: 0.45em; }
+.guide-page .callout-content > :last-child { margin-bottom: 0.2em; }
+.guide-page .callout[data-callout="contents"] { --callout-icon: lucide-list; }
+
+.guide-page .callout[data-callout="nav"] {
+  padding: 0.55em 0.8em;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  font-size: 0.9em;
+  line-height: 1.65;
+}
+
+.guide-page .callout[data-callout="nav"] .callout-title,
+.guide-page .callout[data-callout="next"] .callout-title {
+  display: none;
+}
+
+.guide-page .callout[data-callout="nav"] .callout-content > p,
+.guide-page .callout[data-callout="next"] .callout-content > p {
+  margin: 0;
+}
+
+.guide-page .callout[data-callout="next"],
+.guide-page .callout[data-callout="start"] {
+  padding: 0.85em 1em;
+  border-inline-start: 3px solid var(--interactive-accent);
+  background: var(--background-secondary);
+}
+
+.guide-page .callout[data-callout="next"] a {
+  font-weight: 650;
+}
+
+.guide-page .callout[data-callout="example"] .callout-content {
+  line-height: 1.8;
+}
+
+/* 地图与路线强调开始、课表和继续；补充入口保持安静但可辨认。 */
+.guide-map .callout[data-callout="start"] .callout-title {
+  display: none;
+}
+.guide-map .callout[data-callout="start"] .callout-content > p {
+  margin-block: 0;
+}
+.guide-map .callout[data-callout="next"] .callout-content > ul {
+  margin-block: 0.45em 0;
+}
+.guide-page .callout[data-callout="nav"] .callout-content > p + p {
+  margin-top: 0.3em;
+  font-size: 0.95em;
+}
+.guide-map h2,
+.guide-index h2 { margin-top: 1.5em; }
+.guide-route h3 { margin-top: 1.8em; }
+
+.guide-map .callout[data-callout="info"].is-collapsible,
+.guide-index .callout[data-callout="info"].is-collapsible,
+.guide-route .callout[data-callout="contents"] {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+}
+.guide-map .callout[data-callout="info"].is-collapsible > .callout-title,
+.guide-index .callout[data-callout="info"].is-collapsible > .callout-title,
+.guide-route .callout[data-callout="contents"] > .callout-title {
+  color: var(--text-normal);
+}
+.guide-map .callout[data-callout="info"].is-collapsible .callout-icon,
+.guide-index .callout[data-callout="info"].is-collapsible .callout-icon,
+.guide-route .callout[data-callout="contents"] .callout-icon {
+  color: var(--text-muted);
+}
+
+.guide-page .el-table,
+.guide-page .table-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.guide-page table {
+  width: 100%;
+  border: 1px solid var(--background-modifier-border);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 7px;
+  font-size: 0.94em;
+  line-height: 1.65;
+}
+
+.guide-page :is(th, td) {
+  padding: 0.55em 0.75em;
+  vertical-align: top;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.guide-page th {
+  min-width: 4.5em;
+  background: var(--background-secondary);
+  font-weight: 650;
+}
+
+.guide-page tbody tr:nth-child(even) td {
+  background: var(--background-primary-alt);
+}
+
+.guide-page tbody tr:hover td {
+  background: var(--background-secondary);
+}
+
+.guide-page table:has(th:nth-child(5)) { min-width: 48rem; }
+.guide-map table:has(th:nth-child(2):last-child) :is(th, td):first-child {
+  min-width: 3.5em;
+  width: 3.5em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.guide-index table:has(th:nth-child(3):last-child) :is(th, td):first-child {
+  min-width: 3em;
+  width: 3em;
+  text-align: center;
+}
+
+.guide-index table:has(th:nth-child(3):last-child) :is(th, td):nth-child(2) {
+  min-width: 12em;
+}
+
+.guide-page img,
+.guide-page svg { max-width: 100%; }
+.guide-page .mermaid { overflow-x: auto; }
+.guide-page input.task-list-item-checkbox { vertical-align: middle; }
+
+/* 总表简明视图：窄阅读区仍保留可读列宽。 */
+.study-overview table:has(th:nth-child(5):last-child) {
+  width: 100%;
+  min-width: 36rem;
+  table-layout: fixed;
+}
+.study-overview table:has(th:nth-child(5):last-child) th:nth-child(1) { width: 31%; }
+.study-overview table:has(th:nth-child(5):last-child) th:nth-child(2) { width: 25%; }
+.study-overview table:has(th:nth-child(5):last-child) th:nth-child(3) { width: 17%; }
+.study-overview table:has(th:nth-child(5):last-child) th:nth-child(4) { width: 17%; }
+.study-overview table:has(th:nth-child(5):last-child) th:nth-child(5) { width: 10%; }
+
+/* 完整字段：滚动区内固定表头与名称，避免挤成逐字换行。 */
+.study-overview .callout-content:has(table) {
+  max-height: 65vh;
+  overflow: auto;
+}
+.study-overview table:has(th:nth-child(11)) {
+  min-width: 112rem;
+  table-layout: fixed;
+}
+.study-overview table:has(th:nth-child(11)) :is(th, td):nth-child(1) {
+  min-width: 16rem;
+  width: 16rem;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: var(--background-primary);
+}
+.study-overview table:has(th:nth-child(11)) :is(th, td):nth-child(3),
+.study-overview table:has(th:nth-child(11)) :is(th, td):nth-child(10) {
+  min-width: 14rem;
+  width: 14rem;
+}
+.study-overview table:has(th:nth-child(11)) :is(th, td):nth-child(6),
+.study-overview table:has(th:nth-child(11)) :is(th, td):nth-child(9),
+.study-overview table:has(th:nth-child(11)) :is(th, td):nth-child(11) {
+  min-width: 11rem;
+  width: 11rem;
+}
+.study-overview table:has(th:nth-child(11)) th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: var(--background-secondary);
+}
+.study-overview table:has(th:nth-child(11)) th:first-child {
+  z-index: 4;
+}
+
+@media (max-width: 800px) {
+  .guide-page .markdown-preview-sizer,
+  .guide-page .cm-sizer {
+    max-width: 100%;
+  }
+  .guide-page h1 { font-size: 1.6em; }
+  .guide-page :is(th, td) { padding: 0.5em 0.6em; }
+}

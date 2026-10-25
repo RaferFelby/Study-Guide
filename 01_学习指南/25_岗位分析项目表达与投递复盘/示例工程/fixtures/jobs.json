@@ -1,0 +1,125 @@
+[
+  {
+    "id": "J01",
+    "title": "Forward Deployed Engineer - Singapore",
+    "employer": "OpenAI",
+    "url": "https://openai.com/careers/forward-deployed-engineer-singapore-singapore/",
+    "location": "Singapore",
+    "qualifications": [
+      "页面列5年以上工程/技术部署并含客户协作经验",
+      "前后端生产代码与端到端交付能力"
+    ],
+    "tasks": [
+      "需求发现/范围/设计/实现/生产推广",
+      "基于评估与采用反馈调整方案"
+    ],
+    "bonus": [],
+    "logistics": [
+      "页面列混合办公、预计50%出差"
+    ],
+    "checked": "2026-10-11",
+    "source_status": "official_page_with_apply_at_check",
+    "analysis_status": "author_summary_not_full_jd",
+    "learner_fit": "not_assessed"
+  },
+  {
+    "id": "J02",
+    "title": "Software Engineer, Model Inference",
+    "employer": "OpenAI",
+    "url": "https://openai.com/careers/software-engineer-model-inference-san-francisco/",
+    "location": "San Francisco",
+    "qualifications": [
+      "页面列至少5年专业软件工程经验",
+      "生产分布式系统与模型性能理解"
+    ],
+    "tasks": [
+      "优化低延迟、高吞吐推理",
+      "定位瓶颈和不稳定来源"
+    ],
+    "bonus": [
+      "性能关键分布式系统经验"
+    ],
+    "logistics": [
+      "地点以招聘页面为准"
+    ],
+    "checked": "2026-10-11",
+    "source_status": "official_page_with_apply_at_check",
+    "analysis_status": "author_summary_not_full_jd",
+    "learner_fit": "not_assessed"
+  },
+  {
+    "id": "J03",
+    "title": "Software Engineer, Observability",
+    "employer": "OpenAI",
+    "url": "https://openai.com/careers/software-engineer-observability-san-francisco/",
+    "location": "San Francisco / New York City / Mountain View",
+    "qualifications": [
+      "页面列生产大规模分布式系统经验",
+      "系统/网络/云基础与全栈产品能力"
+    ],
+    "tasks": [
+      "日志/时间序列/轨迹存储",
+      "可观测工具与交互排错"
+    ],
+    "bonus": [
+      "Prometheus/OpenTelemetry贡献或建设经验"
+    ],
+    "logistics": [
+      "岗位页面列三个地点"
+    ],
+    "checked": "2026-10-11",
+    "source_status": "official_page_with_apply_at_check",
+    "analysis_status": "author_summary_not_full_jd",
+    "learner_fit": "not_assessed"
+  },
+  {
+    "id": "J04",
+    "title": "Software Engineer, Beneficial Deployments",
+    "employer": "Anthropic",
+    "url": "https://job-boards.greenhouse.io/anthropic/jobs/4942024008",
+    "location": "San Francisco / New York City",
+    "qualifications": [
+      "页面列6年以上全栈实践经验",
+      "身份/API/自助接入与协作能力"
+    ],
+    "tasks": [
+      "理解组织需要并构建可扩展产品",
+      "工具集成与可靠性"
+    ],
+    "bonus": [
+      "多语言/无障碍或AI应用经验"
+    ],
+    "logistics": [
+      "地点及办公条件需申请前复核"
+    ],
+    "checked": "2026-10-11",
+    "source_status": "official_page_with_apply_at_check",
+    "analysis_status": "author_summary_not_full_jd",
+    "learner_fit": "not_assessed"
+  },
+  {
+    "id": "J05",
+    "title": "Research Engineer, Post-Training Model Evaluations",
+    "employer": "Anthropic",
+    "url": "https://job-boards.greenhouse.io/anthropic/jobs/5198255008",
+    "location": "San Francisco / Seattle",
+    "qualifications": [
+      "页面列规模化ML评估设计/分析经验",
+      "强Python与生产系统能力"
+    ],
+    "tasks": [
+      "评估策略、训练中质量观察",
+      "回归调查与测量可信度"
+    ],
+    "bonus": [
+      "后训练实践、统计/实验设计背景"
+    ],
+    "logistics": [
+      "地点及办公条件需申请前复核"
+    ],
+    "checked": "2026-10-11",
+    "source_status": "official_page_with_apply_at_check",
+    "analysis_status": "author_summary_not_full_jd",
+    "learner_fit": "not_assessed"
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "questions_sha256": "9bc01d3558e7dd98ad8a323efeae131cfaeab82f3c0b8be94e926df397a96bfb",
+  "corpus_sha256": "d91e5480fec8cc0d20be0e153984add763244924da70f8bf6973907fa03e9d4a",
+  "requested_dimensions": 8,
+  "actual_dimensions": 8,
+  "top_k": 1,
+  "candidate_k": 8,
+  "rrf_constant": 60,
+  "random_state": 42,
+  "scikit_learn_version": "1.9.1",
+  "reports": [
+    {
+      "strategy": "bm25",
+      "questions": 30,
+      "answerable": 24,
+      "unanswerable": 6,
+      "top_k": 1,
+      "threshold": 0.0,
+      "recall_at_k": 0.625,
+      "mrr_at_k": 0.625,
+      "ndcg_at_k": 0.625,
+      "answer_accuracy": 0.7,
+      "coverage": 0.5,
+      "faithfulness_proxy": 1.0,
+      "citation_accuracy": 1.0,
+      "false_rejection_rate": 0.375,
+      "unknown_rejection_rate": 1.0,
+      "failures": {
+        "correct_answer": 15,
+        "retrieval_miss": 9,
+        "correct_rejection": 6
+      }
+    },
+    {
+      "strategy": "dense",
+      "questions": 30,
+      "answerable": 24,
+      "unanswerable": 6,
+      "top_k": 1,
+      "threshold": 0.0,
+      "recall_at_k": 0.625,
+      "mrr_at_k": 0.625,
+      "ndcg_at_k": 0.625,
+      "answer_accuracy": 0.7,
+      "coverage": 0.5,
+      "faithfulness_proxy": 1.0,
+      "citation_accuracy": 1.0,
+      "false_rejection_rate": 0.375,
+      "unknown_rejection_rate": 1.0,
+      "failures": {
+        "correct_answer": 15,
+        "retrieval_miss": 9,
+        "correct_rejection": 6
+      }
+    },
+    {
+      "strategy": "hybrid",
+      "questions": 30,
+      "answerable": 24,
+      "unanswerable": 6,
+      "top_k": 1,
+      "threshold": 0.0,
+      "recall_at_k": 0.875,
+      "mrr_at_k": 0.875,
+      "ndcg_at_k": 0.875,
+      "answer_accuracy": 0.9,
+      "coverage": 0.7,
+      "faithfulness_proxy": 1.0,
+      "citation_accuracy": 1.0,
+      "false_rejection_rate": 0.125,
+      "unknown_rejection_rate": 1.0,
+      "failures": {
+        "correct_answer": 21,
+        "retrieval_miss": 3,
+        "correct_rejection": 6
+      }
+    },
+    {
+      "strategy": "rerank",
+      "questions": 30,
+      "answerable": 24,
+      "unanswerable": 6,
+      "top_k": 1,
+      "threshold": 0.0,
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "answer_accuracy": 1.0,
+      "coverage": 0.8,
+      "faithfulness_proxy": 1.0,
+      "citation_accuracy": 1.0,
+      "false_rejection_rate": 0.0,
+      "unknown_rejection_rate": 1.0,
+      "failures": {
+        "correct_answer": 24,
+        "correct_rejection": 6
+      }
+    }
+  ]
+}

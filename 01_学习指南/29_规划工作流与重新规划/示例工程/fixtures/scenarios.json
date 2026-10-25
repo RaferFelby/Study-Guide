@@ -1,0 +1,8 @@
+[
+  {"id":"normal","policy":"ok","backup":"ok","ticket":"ok","publish":false,"allow_backup":true},
+  {"id":"primary_down","policy":"down","backup":"ok","ticket":"ok","publish":false,"allow_backup":true},
+  {"id":"both_down","policy":"down","backup":"down","ticket":"ok","publish":false,"allow_backup":true},
+  {"id":"primary_stale","policy":"stale","backup":"ok","ticket":"ok","publish":false,"allow_backup":true},
+  {"id":"bad_ticket","policy":"ok","backup":"ok","ticket":"bad","publish":false,"allow_backup":true},
+  {"id":"publish_gate","policy":"ok","backup":"ok","ticket":"ok","publish":true,"allow_backup":true}
+]

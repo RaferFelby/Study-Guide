@@ -1,0 +1,8 @@
+{
+  "origin": "simulated_confirmation_not_real_user_consent",
+  "messages": [
+    {"id": "conversation-1/message-1", "owner": "demo-alice", "text": "请将英文作为长期回答偏好。", "expected_value": "English", "time": "2026-10-11T00:00:00+00:00"},
+    {"id": "conversation-1/message-2", "owner": "demo-alice", "text": "刚才被记成中文是错误，偏好应为英文，请纠正。", "expected_value": "English", "time": "2026-10-11T00:01:00+00:00"},
+    {"id": "conversation-b/message-1", "owner": "demo-bob", "text": "请将西班牙语作为长期回答偏好。", "expected_value": "Spanish", "time": "2026-10-11T00:00:00+00:00"}
+  ]
+}

@@ -1,0 +1,698 @@
+[
+  {
+    "question_id": "compute-cancellation-1",
+    "query": "What is the compute cancellation window?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "24 hours",
+    "relevant_ids": [
+      "compute-cancellation"
+    ],
+    "evidence_locator": "policies/compute.md#cancellation",
+    "category": "direct"
+  },
+  {
+    "question_id": "compute-cancellation-2",
+    "query": "How early must I cancel compute?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "24 hours",
+    "relevant_ids": [
+      "compute-cancellation"
+    ],
+    "evidence_locator": "policies/compute.md#cancellation",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "compute-retention-1",
+    "query": "What is the compute retention period?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "14 days",
+    "relevant_ids": [
+      "compute-retention"
+    ],
+    "evidence_locator": "policies/compute.md#retention",
+    "category": "direct"
+  },
+  {
+    "question_id": "compute-retention-2",
+    "query": "How long does compute keep records?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "14 days",
+    "relevant_ids": [
+      "compute-retention"
+    ],
+    "evidence_locator": "policies/compute.md#retention",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "compute-capacity-1",
+    "query": "What is the compute capacity limit?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "64 GB",
+    "relevant_ids": [
+      "compute-capacity"
+    ],
+    "evidence_locator": "policies/compute.md#capacity",
+    "category": "direct"
+  },
+  {
+    "question_id": "compute-capacity-2",
+    "query": "What quota does compute allow?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "64 GB",
+    "relevant_ids": [
+      "compute-capacity"
+    ],
+    "evidence_locator": "policies/compute.md#capacity",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "compute-contact-1",
+    "query": "What is the compute contact email?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "compute@example.invalid",
+    "relevant_ids": [
+      "compute-contact"
+    ],
+    "evidence_locator": "policies/compute.md#contact",
+    "category": "direct"
+  },
+  {
+    "question_id": "compute-contact-2",
+    "query": "Who should I email about compute?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "compute@example.invalid",
+    "relevant_ids": [
+      "compute-contact"
+    ],
+    "evidence_locator": "policies/compute.md#contact",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "storage-cancellation-1",
+    "query": "What is the storage cancellation window?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "48 hours",
+    "relevant_ids": [
+      "storage-cancellation"
+    ],
+    "evidence_locator": "policies/storage.md#cancellation",
+    "category": "direct"
+  },
+  {
+    "question_id": "storage-cancellation-2",
+    "query": "How early must I cancel storage?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "48 hours",
+    "relevant_ids": [
+      "storage-cancellation"
+    ],
+    "evidence_locator": "policies/storage.md#cancellation",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "storage-retention-1",
+    "query": "What is the storage retention period?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "30 days",
+    "relevant_ids": [
+      "storage-retention"
+    ],
+    "evidence_locator": "policies/storage.md#retention",
+    "category": "direct"
+  },
+  {
+    "question_id": "storage-retention-2",
+    "query": "How long does storage keep records?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "30 days",
+    "relevant_ids": [
+      "storage-retention"
+    ],
+    "evidence_locator": "policies/storage.md#retention",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "storage-capacity-1",
+    "query": "What is the storage capacity limit?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "2 TB",
+    "relevant_ids": [
+      "storage-capacity"
+    ],
+    "evidence_locator": "policies/storage.md#capacity",
+    "category": "direct"
+  },
+  {
+    "question_id": "storage-capacity-2",
+    "query": "What quota does storage allow?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "2 TB",
+    "relevant_ids": [
+      "storage-capacity"
+    ],
+    "evidence_locator": "policies/storage.md#capacity",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "storage-contact-1",
+    "query": "What is the storage contact email?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "storage@example.invalid",
+    "relevant_ids": [
+      "storage-contact"
+    ],
+    "evidence_locator": "policies/storage.md#contact",
+    "category": "direct"
+  },
+  {
+    "question_id": "storage-contact-2",
+    "query": "Who should I email about storage?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "storage@example.invalid",
+    "relevant_ids": [
+      "storage-contact"
+    ],
+    "evidence_locator": "policies/storage.md#contact",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "network-cancellation-1",
+    "query": "What is the network cancellation window?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "12 hours",
+    "relevant_ids": [
+      "network-cancellation"
+    ],
+    "evidence_locator": "policies/network.md#cancellation",
+    "category": "direct"
+  },
+  {
+    "question_id": "network-cancellation-2",
+    "query": "How early must I cancel network?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "12 hours",
+    "relevant_ids": [
+      "network-cancellation"
+    ],
+    "evidence_locator": "policies/network.md#cancellation",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "network-retention-1",
+    "query": "What is the network retention period?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "7 days",
+    "relevant_ids": [
+      "network-retention"
+    ],
+    "evidence_locator": "policies/network.md#retention",
+    "category": "direct"
+  },
+  {
+    "question_id": "network-retention-2",
+    "query": "How long does network keep records?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "7 days",
+    "relevant_ids": [
+      "network-retention"
+    ],
+    "evidence_locator": "policies/network.md#retention",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "network-capacity-1",
+    "query": "What is the network capacity limit?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "10 Gbps",
+    "relevant_ids": [
+      "network-capacity"
+    ],
+    "evidence_locator": "policies/network.md#capacity",
+    "category": "direct"
+  },
+  {
+    "question_id": "network-capacity-2",
+    "query": "What quota does network allow?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "10 Gbps",
+    "relevant_ids": [
+      "network-capacity"
+    ],
+    "evidence_locator": "policies/network.md#capacity",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "network-contact-1",
+    "query": "What is the network contact email?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "network@example.invalid",
+    "relevant_ids": [
+      "network-contact"
+    ],
+    "evidence_locator": "policies/network.md#contact",
+    "category": "direct"
+  },
+  {
+    "question_id": "network-contact-2",
+    "query": "Who should I email about network?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "network@example.invalid",
+    "relevant_ids": [
+      "network-contact"
+    ],
+    "evidence_locator": "policies/network.md#contact",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "database-cancellation-1",
+    "query": "What is the database cancellation window?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "72 hours",
+    "relevant_ids": [
+      "database-cancellation"
+    ],
+    "evidence_locator": "policies/database.md#cancellation",
+    "category": "direct"
+  },
+  {
+    "question_id": "database-cancellation-2",
+    "query": "How early must I cancel database?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "72 hours",
+    "relevant_ids": [
+      "database-cancellation"
+    ],
+    "evidence_locator": "policies/database.md#cancellation",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "database-retention-1",
+    "query": "What is the database retention period?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "21 days",
+    "relevant_ids": [
+      "database-retention"
+    ],
+    "evidence_locator": "policies/database.md#retention",
+    "category": "direct"
+  },
+  {
+    "question_id": "database-retention-2",
+    "query": "How long does database keep records?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "21 days",
+    "relevant_ids": [
+      "database-retention"
+    ],
+    "evidence_locator": "policies/database.md#retention",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "database-capacity-1",
+    "query": "What is the database capacity limit?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "500 connections",
+    "relevant_ids": [
+      "database-capacity"
+    ],
+    "evidence_locator": "policies/database.md#capacity",
+    "category": "direct"
+  },
+  {
+    "question_id": "database-capacity-2",
+    "query": "What quota does database allow?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "500 connections",
+    "relevant_ids": [
+      "database-capacity"
+    ],
+    "evidence_locator": "policies/database.md#capacity",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "database-contact-1",
+    "query": "What is the database contact email?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "db@example.invalid",
+    "relevant_ids": [
+      "database-contact"
+    ],
+    "evidence_locator": "policies/database.md#contact",
+    "category": "direct"
+  },
+  {
+    "question_id": "database-contact-2",
+    "query": "Who should I email about database?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "db@example.invalid",
+    "relevant_ids": [
+      "database-contact"
+    ],
+    "evidence_locator": "policies/database.md#contact",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "training-cancellation-1",
+    "query": "What is the training cancellation window?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "6 hours",
+    "relevant_ids": [
+      "training-cancellation"
+    ],
+    "evidence_locator": "policies/training.md#cancellation",
+    "category": "direct"
+  },
+  {
+    "question_id": "training-cancellation-2",
+    "query": "How early must I cancel training?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "6 hours",
+    "relevant_ids": [
+      "training-cancellation"
+    ],
+    "evidence_locator": "policies/training.md#cancellation",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "training-retention-1",
+    "query": "What is the training retention period?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "3 days",
+    "relevant_ids": [
+      "training-retention"
+    ],
+    "evidence_locator": "policies/training.md#retention",
+    "category": "direct"
+  },
+  {
+    "question_id": "training-retention-2",
+    "query": "How long does training keep records?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "3 days",
+    "relevant_ids": [
+      "training-retention"
+    ],
+    "evidence_locator": "policies/training.md#retention",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "training-capacity-1",
+    "query": "What is the training capacity limit?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "4 GPUs",
+    "relevant_ids": [
+      "training-capacity"
+    ],
+    "evidence_locator": "policies/training.md#capacity",
+    "category": "direct"
+  },
+  {
+    "question_id": "training-capacity-2",
+    "query": "What quota does training allow?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "4 GPUs",
+    "relevant_ids": [
+      "training-capacity"
+    ],
+    "evidence_locator": "policies/training.md#capacity",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "training-contact-1",
+    "query": "What is the training contact email?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "train@example.invalid",
+    "relevant_ids": [
+      "training-contact"
+    ],
+    "evidence_locator": "policies/training.md#contact",
+    "category": "direct"
+  },
+  {
+    "question_id": "training-contact-2",
+    "query": "Who should I email about training?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": "train@example.invalid",
+    "relevant_ids": [
+      "training-contact"
+    ],
+    "evidence_locator": "policies/training.md#contact",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "analytics-cancellation-1",
+    "query": "What is the analytics cancellation window?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "36 hours",
+    "relevant_ids": [
+      "analytics-cancellation"
+    ],
+    "evidence_locator": "policies/analytics.md#cancellation",
+    "category": "direct"
+  },
+  {
+    "question_id": "analytics-cancellation-2",
+    "query": "How early must I cancel analytics?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "36 hours",
+    "relevant_ids": [
+      "analytics-cancellation"
+    ],
+    "evidence_locator": "policies/analytics.md#cancellation",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "analytics-retention-1",
+    "query": "What is the analytics retention period?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "10 days",
+    "relevant_ids": [
+      "analytics-retention"
+    ],
+    "evidence_locator": "policies/analytics.md#retention",
+    "category": "direct"
+  },
+  {
+    "question_id": "analytics-retention-2",
+    "query": "How long does analytics keep records?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "10 days",
+    "relevant_ids": [
+      "analytics-retention"
+    ],
+    "evidence_locator": "policies/analytics.md#retention",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "analytics-capacity-1",
+    "query": "What is the analytics capacity limit?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "8 workers",
+    "relevant_ids": [
+      "analytics-capacity"
+    ],
+    "evidence_locator": "policies/analytics.md#capacity",
+    "category": "direct"
+  },
+  {
+    "question_id": "analytics-capacity-2",
+    "query": "What quota does analytics allow?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "8 workers",
+    "relevant_ids": [
+      "analytics-capacity"
+    ],
+    "evidence_locator": "policies/analytics.md#capacity",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "analytics-contact-1",
+    "query": "What is the analytics contact email?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "data@example.invalid",
+    "relevant_ids": [
+      "analytics-contact"
+    ],
+    "evidence_locator": "policies/analytics.md#contact",
+    "category": "direct"
+  },
+  {
+    "question_id": "analytics-contact-2",
+    "query": "Who should I email about analytics?",
+    "split": "test",
+    "audience": "staff",
+    "answer": "data@example.invalid",
+    "relevant_ids": [
+      "analytics-contact"
+    ],
+    "evidence_locator": "policies/analytics.md#contact",
+    "category": "paraphrase"
+  },
+  {
+    "question_id": "unknown-01",
+    "query": "What is the compute price?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": null,
+    "relevant_ids": [],
+    "evidence_locator": null,
+    "category": "missing_fact"
+  },
+  {
+    "question_id": "unknown-02",
+    "query": "What is the network uptime guarantee?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": null,
+    "relevant_ids": [],
+    "evidence_locator": null,
+    "category": "missing_fact"
+  },
+  {
+    "question_id": "unknown-03",
+    "query": "What is the compute capacity for the premium plan?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": null,
+    "relevant_ids": [],
+    "evidence_locator": null,
+    "category": "unsupported_qualifier"
+  },
+  {
+    "question_id": "unknown-04",
+    "query": "What is the quantum capacity limit?",
+    "split": "dev",
+    "audience": "staff",
+    "answer": null,
+    "relevant_ids": [],
+    "evidence_locator": null,
+    "category": "unknown_service"
+  },
+  {
+    "question_id": "unknown-05",
+    "query": "What is the training capacity limit?",
+    "split": "dev",
+    "audience": "public",
+    "answer": null,
+    "relevant_ids": [],
+    "evidence_locator": null,
+    "category": "permission_denied"
+  },
+  {
+    "question_id": "unknown-06",
+    "query": "What is the training contact email?",
+    "split": "dev",
+    "audience": "public",
+    "answer": null,
+    "relevant_ids": [],
+    "evidence_locator": null,
+    "category": "permission_denied"
+  },
+  {
+    "question_id": "unknown-07",
+    "query": "What is the storage price?",
+    "split": "test",
+    "audience": "staff",
+    "answer": null,
+    "relevant_ids": [],
+    "evidence_locator": null,
+    "category": "missing_fact"
+  },
+  {
+    "question_id": "unknown-08",
+    "query": "What is the storage retention for the premium plan?",
+    "split": "test",
+    "audience": "staff",
+    "answer": null,
+    "relevant_ids": [],
+    "evidence_locator": null,
+    "category": "unsupported_qualifier"
+  },
+  {
+    "question_id": "unknown-09",
+    "query": "What is the database encryption algorithm?",
+    "split": "test",
+    "audience": "staff",
+    "answer": null,
+    "relevant_ids": [],
+    "evidence_locator": null,
+    "category": "missing_fact"
+  },
+  {
+    "question_id": "unknown-10",
+    "query": "What is the archive retention period?",
+    "split": "test",
+    "audience": "staff",
+    "answer": null,
+    "relevant_ids": [],
+    "evidence_locator": null,
+    "category": "unknown_service"
+  },
+  {
+    "question_id": "unknown-11",
+    "query": "What is the database contact email?",
+    "split": "test",
+    "audience": "public",
+    "answer": null,
+    "relevant_ids": [],
+    "evidence_locator": null,
+    "category": "permission_denied"
+  },
+  {
+    "question_id": "unknown-12",
+    "query": "What is the database cancellation window?",
+    "split": "test",
+    "audience": "public",
+    "answer": null,
+    "relevant_ids": [],
+    "evidence_locator": null,
+    "category": "permission_denied"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "benchmark": "GSM8K_archived_model_outputs",
+  "commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+  "snapshot_date": "2026-10-13",
+  "scope": "public_saved_outputs_replay_not_live_model_generation",
+  "sources": {
+    "archive.jsonl": {
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/grade_school_math/data/example_model_solutions.jsonl",
+      "sha256": "4bc62db838f8418365d51c627bd66294cbdca9fb7f01519cb13f0dce8c51580b",
+      "bytes": 2563513
+    },
+    "GSM8K-LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/LICENSE",
+      "sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b",
+      "bytes": 1062
+    },
+    "demos.json": {
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/grade_school_math/data/train.jsonl",
+      "sha256": "64bb50ac97039f058e62a489d40aaa1fe0ad508e3439daeb987ad89234713037",
+      "upstream_sha256": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+      "selection": "first_5_training_rows_only"
+    }
+  }
+}

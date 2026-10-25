@@ -1,0 +1,27 @@
+# Python 虚拟环境与缓存
+**/.venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.ruff_cache/
+**/.mypy_cache/
+
+# 教程运行产生的临时实验结果与安装产物
+**/results/
+**/*.egg-info/
+.author-tools/
+
+# 本机测试报告与编辑器窗口状态
+**/.coverage
+**/.coverage.*
+**/htmlcov/
+.obsidian/workspace*.json
+
+# 本机服务凭据；教学配置模板仍可提交
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.template
+**/*.pem
+**/id_rsa
+**/id_ed25519
